@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function having array methods</title>
+</head>
+<body>
+    <h4>Fruit work in console</h4>
+    <script>
+        var fruit = ["banana", "apple", "orange", "watermelon"];
+        var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
+         
+        function ofMethods(a, b) {
+            console.log("fruit: ", a);
+            console.log("vegetables: ", b);
+            b.pop();
+            console.log("vegetables: ", b);
+            a.shift();
+            console.log("fruit: ", a);
+            a.push( a.indexOf("orange"));
+            console.log("fruit: ", a);
+            b.push( b.length);
+            console.log("vegetables: ", b);
+            var food = a.concat(b);
+            console.log("food: ", food);
+            food.splice( 4,2 );
+            console.log("food: ", food);
+            food.reverse();
+            console.log("food: ", food);
+            alert(food.toString());
+
+
+
+         }
+
+        ofMethods(fruit, vegetables);
+    </script>
+    
+</body>
+</html>
